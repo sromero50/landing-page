@@ -2,19 +2,109 @@
     Here you put styles that modify the original behavior CSS/HTML had,
     for example: list elements come with a little circle that nobody uses anymore.
  */
-ul{margin: 0; padding:0;}
-ul li{list-style: none;}
+ ul{margin: 0; padding:0;}
+ ul li{list-style: none;}
+ body{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ /* 
+     BEHAVIORAL STYLES
+     for example: .horizontal, .container, .p-1 (for padding one)
+ */
+.p-1{
+    padding: 10px;
+}
 
-/* 
-    BEHAVIORAL STYLES
-    for example: .horizontal, .container, .p-1 (for padding one)
-*/
-.p-1{ padding: 10px; }
+ .container{
+     max-width: 960px;
+     margin: auto;
+ }
+
+.mitad{
+    width: 50%;
+}
 
 
+.img{
+    background-size: 100% 100%;
+}
 
+ .grid{
+     display: flex;
+     justify-content: flex-end;
+ }
+ 
+ .grid.horizontal{
+     flex-direction: row;
+ }
+ 
+ .grid.horizontal .img{
+     flex-grow: 1;
+     margin-top: 10px;
+ }
 
-/* 
-    SPECIFIC TO YOUR WEBSITE 
-    The more senior you become the less you have specific styles
-*/
+ .grid.horizontal .img:first-child{
+    flex-grow: 1;
+    margin-left: 0;
+}
+ 
+.grid.grid-left{
+justify-content: flex-start;
+}
+
+.grid ul li{
+    margin-left: 10px;
+}
+.grid.grid-left li{
+    margin-right: 10px;
+}
+
+button{
+    background: black;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px 20px;
+    margin-top: 15px;
+}
+
+.categorias{
+    text-transform: uppercase;
+}
+
+ /* 
+     SPECIFIC TO YOUR WEBSITE 
+     The more senior you become the less you have specific styles
+ */
+ 
+.description{
+    border-top: 1px gray solid;
+    margin-top: 30px;
+}
+
+.barra{
+    border-bottom: 1px gray solid;
+}
+
+ .logo{
+     flex-grow: 1;
+ }
+
+ .botones{
+     flex-grow: 2;
+ }
+
+.principal-img{
+    height: 350px !important;
+}
+
+.fotos .img{
+    height: 150px;
+}
+
+.precio{
+    font-size: 30px;
+}

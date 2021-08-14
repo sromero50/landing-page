@@ -1,10 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Product Langing Page in Plain HTML/CSS - BreatheCode</title>
-        <link rel="stylesheet" type="text/css" href="./style.css">
-    </head>
-    <body>
-        <p>Hello! Update this index.html file and the style.css to start seing changes on your website</p>
-    </body>
+
+<head>
+    <title>Product Langing Page in Plain HTML/CSS - BreatheCode</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="barra grid horizontal">
+            <div class="logo p-1"><span><a href="#">SHOPSHOP</a></span></div>
+            <ul class="botones grid horizontal p-1">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Cart (0)</a></li>
+            </ul>
+        </div>
+        <div class="categorias p-1">
+            <ul class="botones grid horizontal grid-left">
+                <li><a href="#">home</a></li>
+                <li>/</li>
+                <li><a href="#">household plants</a></li>
+                <li>/</li>
+                <li><a href="#">bonsai</a></li>
+            </ul>
+        </div>
+        <div class="contenido grid horizontal">
+            <div class="fotos mitad p-1">
+                <div class="principal-img img" style="background-image: url(./assets/product3.jpeg);"></div>
+                <ul class="grid horizontal">
+                    <li class="img" style="background-image: url(./assets/product3.jpeg);"></li>
+                    <li class="img" style="background-image: url(./assets/product2.jpeg);"></li>
+                    <li class="img" style="background-image: url(./assets/product1.jpeg);"></li>
+                </ul>
+            </div>
+            <div class="product mitad p-1">
+                <h1>Bonsai</h1>
+                <span class="precio">$19.99</span>
+                <div class="description">
+                    <p>The purposes of bonsai are primarily contemplation for the viewer, and the pleasent excercise of
+                        effort and ingenuity for the grower</p>
+                    <p>By contrast with other plant cultivation practices, bonsai is not intended for production of food
+                        or for medicine. Instead, bonsai practice focuses on long-term cultivation and shaping of one or
+                        more small trees growing in a container</p>
+                </div>
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
